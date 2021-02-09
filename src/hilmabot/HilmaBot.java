@@ -31,11 +31,11 @@ public class HilmaBot {
         }
         
         
-        try {
+        /*try {
             TimeUnit.MINUTES.sleep(2);
         }catch(Exception e) {
             System.out.print("Något gick helt jävla fel (e.getMessage())");
-        }
+        }*/
     }
     
 }
