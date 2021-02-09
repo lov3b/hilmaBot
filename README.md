@@ -1,2 +1,2 @@
 # hilmaBot
-Hilma behöver ta sin medicin
+Hilma behöver ta sin medicin.
