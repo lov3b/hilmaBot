@@ -7,6 +7,7 @@ package hilmabot;
 
 import net.dv8tion.jda.api.*;
 import net.dv8tion.jda.api.entities.Activity;
+import java.util.concurrent.TimeUnit;
 
 /**
  *
@@ -23,9 +24,18 @@ public class HilmaBot {
         builder.setBulkDeleteSplittingEnabled(false);
         builder.setActivity(Activity.watching("Hilma ta sin jävla medicin"));
         
-        System.out.println("Bygger..."); 
-        builder.build();
-        System.out.println("Färdigt!");
+        try {
+            builder.build();
+        }catch(Exception e) {
+            System.out.print("Något gick helt jävla fel (e.getMessage())");
+        }
+        
+        
+        try {
+            TimeUnit.MINUTES.sleep(2);
+        }catch(Exception e) {
+            System.out.print("Något gick helt jävla fel (e.getMessage())");
+        }
     }
     
 }
