@@ -5,9 +5,11 @@
  */
 package hilmabot;
 
+import net.dv8tion.jda.api.*;
+
 /**
  *
- * @author love
+ * @author love, Hubbe
  */
 public class HilmaBot {
 
@@ -16,6 +18,7 @@ public class HilmaBot {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        JDABuilder builder = JDABuilder.createDefault(args[0]);
     }
     
 }
